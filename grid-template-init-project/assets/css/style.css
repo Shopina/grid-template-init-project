@@ -804,6 +804,37 @@
     padding: 20px;
     transition: color 0.5s;
   }
+
+  .about {
+    background-color: rgb(229, 229, 229);
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 271px;
+    grid-gap: 100px;
+    /* max-width: 1340px; */
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .about-content {
+    display: block;
+  }
+  .about-content p:first-of-type::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 2px;
+    height: 200px;
+    background-color: rgba(99, 117, 136, 0.1);
+  }
+
+  .about-image {
+    display: block;
+  }
   
   @media (min-width: 993px) {
     .skills {
