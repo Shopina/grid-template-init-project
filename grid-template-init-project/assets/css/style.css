@@ -518,7 +518,7 @@
     border-width: 2px;
     border-style: solid;
     font-size: 1.125rem;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, border-color 0.5s;
   }
   
   .btn {
@@ -838,6 +838,54 @@
     margin-top: 20px;
   }
 
+  .form {
+    padding: 30px 0;
+    background-color: #2d3651;
+  }
+
+  .form .container {
+    grid-gap: 20px;
+  }
+
+  .form-item__input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    letter-spacing: 0.15em;
+    font-size: 1.125rem;
+    color: #ffffff;
+    transition: background-color 0.5s, border-color 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .form-item__input:focus,
+  .form-item__input:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-bottom-color: #ffffff;
+  }
+
+  .form-item .btn-accent {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .form-item .btn-accent:hover,
+  .form-item .btn-accent:hover {
+    background-color: #d66926;
+    border-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  
+
+
   @media (min-width: 993px) {
     .skills {
       grid-template-columns: repeat(4, 1fr);
@@ -870,6 +918,10 @@
 
     .about-content p:first-of-type::after {
       right: -50px;
+    }
+
+    .form .container {
+      grid-template-columns: repeat(3, 1fr)
     }
   }
   
@@ -917,6 +969,10 @@
 
     .about-content p:first-of-type::after {
       right: -20px;
+    }
+
+    .form .container {
+      grid-template-columns: repeat(3, 1fr)
     }
 
   }
@@ -981,6 +1037,10 @@
 
     .about-content p:first-of-type::after {
       right: -10px;
+    }
+
+    .form .container {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
